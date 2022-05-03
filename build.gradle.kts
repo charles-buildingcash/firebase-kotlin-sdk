@@ -5,7 +5,10 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 plugins {
     kotlin("multiplatform") version "1.6.10" apply false
     id("base")
+    id("maven-publish")
 }
+
+group = "com.github.charles-buildingcash"
 
 buildscript {
     repositories {
